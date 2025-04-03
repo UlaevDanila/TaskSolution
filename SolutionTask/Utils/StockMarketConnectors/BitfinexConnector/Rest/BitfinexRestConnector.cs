@@ -4,7 +4,7 @@ using StockMarketConnector.Entities;
 
 namespace SolutionTask.Utils.StockMarketConnectors.BitfinexConnector.Rest;
 
-public class BifnitexRestConnector(HttpClient httpClient) : IRestConnector
+public class BitfinexRestConnector(HttpClient httpClient) : IRestConnector
 {
     private readonly string _baseAPIurl = "https://api-pub.bitfinex.com/v2/";
 
