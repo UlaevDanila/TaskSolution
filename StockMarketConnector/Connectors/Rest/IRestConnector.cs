@@ -4,9 +4,9 @@ namespace StockMarketConnector.Connectors.Rest;
 
 public interface IRestConnector
 {
-    public Task<Trade> GetTrade(string firstValueName, string secondValueName);
+    public IEnumerable<Trade> GetTrade(string firstValueName, string secondValueName);
 
-    public Task<Candle> GetCandles(string firstValueName, string secondValueName);
+    public IEnumerable<Candle> GetCandles(string firstValueName, string secondValueName, string timePeriod);
 
-    public Task<Ticker> GetTicker(string tickerName);
+    public IEnumerable<Ticker> GetTicker(string firstValueName, string secondValueName);
 }
