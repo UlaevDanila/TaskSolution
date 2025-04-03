@@ -1,0 +1,9 @@
+SolutionTask/wwwroot/
+SolutionTask/appsetings.json
+SolutionTask/appsetings.Development.json
+*.dll
+.git
+.idea/
+*.csproj
+*.sln
+gloabal.json
