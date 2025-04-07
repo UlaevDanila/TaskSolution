@@ -1,4 +1,4 @@
 namespace StockMarketConnector.Entities;
 
-public record Ticker(decimal Bid, decimal DailyChange, decimal LastPrice,
-                        decimal Volume, decimal High, decimal Low);
+public record Ticker(float Bid, float BidSize, float LowestAsk, float AskSize, float DailyChange, 
+                        float DailyChangeRelative, float LastPrice, float Volume, float High, float Low);

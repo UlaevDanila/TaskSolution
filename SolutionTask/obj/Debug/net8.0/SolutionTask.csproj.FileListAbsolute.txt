@@ -32,3 +32,5 @@ D:\Programming\C#\TestTasks\SolutionTask\SolutionTask\obj\Debug\net8.0\SolutionT
 D:\Programming\C#\TestTasks\SolutionTask\SolutionTask\bin\Debug\net8.0\StockMarketConnector.dll
 D:\Programming\C#\TestTasks\SolutionTask\SolutionTask\bin\Debug\net8.0\StockMarketConnector.pdb
 D:\Programming\C#\TestTasks\SolutionTask\SolutionTask\obj\Debug\net8.0\Solution.C5109952.Up2Date
+D:\Programming\C#\TestTasks\SolutionTask\SolutionTask\obj\Debug\net8.0\SolutionTask.sourcelink.json
+D:\Programming\C#\TestTasks\SolutionTask\SolutionTask\bin\Debug\net8.0\Newtonsoft.Json.dll

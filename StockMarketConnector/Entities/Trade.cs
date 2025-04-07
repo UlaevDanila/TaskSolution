@@ -1,3 +1,3 @@
 namespace StockMarketConnector.Entities;
 
-public record Trade(int Id, int Mts, decimal Amount, decimal Price);
+public record Trade(float Id, float Mts, float Amount, float Price);

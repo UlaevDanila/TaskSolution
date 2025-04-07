@@ -8,5 +8,5 @@ public interface IRestConnector
 
     public IEnumerable<Candle> GetCandles(string firstValueName, string secondValueName, string timePeriod);
 
-    public IEnumerable<Ticker> GetTicker(string firstValueName, string secondValueName);
+    public Ticker GetTicker(string firstValueName, string secondValueName);
 }

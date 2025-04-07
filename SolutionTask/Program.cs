@@ -1,12 +1,9 @@
-using SolutionTask.Utils.StockMarketConnectors.BitfinexConnector.Rest;
-using StockMarketConnector.Connectors.Rest;
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddSingleton<IRestConnector, BitfinexRestConnector>();
 
 builder.Services.AddControllersWithViews();
+builder.Services.AddSingleton<HttpClient>();
 
 var app = builder.Build();
 
@@ -15,6 +12,6 @@ app.UseRouting();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=RestApi}/{action=GetTrade}/{id?}");
 
 app.Run();
