@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "SolutionTask/1.0.0": {
+        "dependencies": {
+          "StockMarketConnector": "1.0.0"
+        },
+        "runtime": {
+          "SolutionTask.dll": {}
+        }
+      },
+      "StockMarketConnector/1.0.0": {
+        "runtime": {
+          "StockMarketConnector.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SolutionTask/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "StockMarketConnector/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

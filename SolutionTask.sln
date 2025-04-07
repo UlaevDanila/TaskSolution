@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolutionTask", "SolutionTask\SolutionTask.csproj", "{CCF1267E-DE31-4377-A777-A74EC57CF8E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockMarketConnector", "StockMarketConnector\StockMarketConnector.csproj", "{A444E6B1-F926-4799-B1C0-AC3013522CC5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CCF1267E-DE31-4377-A777-A74EC57CF8E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCF1267E-DE31-4377-A777-A74EC57CF8E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCF1267E-DE31-4377-A777-A74EC57CF8E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCF1267E-DE31-4377-A777-A74EC57CF8E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A444E6B1-F926-4799-B1C0-AC3013522CC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A444E6B1-F926-4799-B1C0-AC3013522CC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A444E6B1-F926-4799-B1C0-AC3013522CC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A444E6B1-F926-4799-B1C0-AC3013522CC5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -7,8 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Utils\StockMarketConnectors\BitfinexConnector\Rest\" />
-      <Folder Include="Utils\StockMarketConnectors\BitfinexConnector\WebSockets\" />
+      <ProjectReference Include="..\StockMarketConnector\StockMarketConnector.csproj" />
     </ItemGroup>
 
 </Project>
