@@ -1,3 +1,3 @@
 namespace StockMarketConnector.Entities;
 
-public record Candle(int Mts, decimal Open, decimal Close, decimal High, decimal Low, decimal Volume);
+public record Candle(float Mts, float Open, float Close, float High, float Low, float Volume);

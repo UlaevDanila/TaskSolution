@@ -18,10 +18,11 @@ public class BitfinexRestConnector(HttpClient httpClient) : IRestConnector
     
     public IEnumerable<Candle> GetCandles(string firstValueName, string secondValueName, string timePeriod)
     {
-        var apiEndpoint = $"{_baseAPIurl}/candles/trade/%3A{timePeriod}%3A{firstValueName}%3A{secondValueName}/hist";
+        var apiEndpoint = $"{_baseAPIurl}candles/trade%3A{timePeriod}%3At{firstValueName}{secondValueName}/hist";
         var response = httpClient.GetAsync(apiEndpoint);
         var jsonResult = response.Result.Content.ReadAsStringAsync();
-        return JsonConvert.DeserializeObject<IEnumerable<Candle>>(jsonResult.Result);
+        var deserializedJson = JsonConvert.DeserializeObject<IEnumerable<IEnumerable<float>>>(jsonResult.Result)!;
+        return deserializedJson.ConvertToCandle();
     }
     
     public Ticker GetTicker(string firstValueName, string secondValueName)

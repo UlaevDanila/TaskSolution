@@ -13,6 +13,11 @@ public class RestApiController(HttpClient httpClient) : Controller
     {
         return _apiConnector.GetTrade(firstName, secondName);
     }
+
+    public IEnumerable<Candle> GetCandles(string firstValue, string secondValue, string timePeriod)
+    {
+        return _apiConnector.GetCandles(firstValue, secondValue, timePeriod);
+    }
     
     public Ticker GetTicker(string firstName, string secondName)
     {

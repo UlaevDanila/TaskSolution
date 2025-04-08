@@ -19,6 +19,22 @@ public static class BitfinexRestMapper
         }
         return trades;
     }
+
+    public static IEnumerable<Candle> ConvertToCandle(this IEnumerable<IEnumerable<float>> responseResult)
+    {
+        var candles = new List<Candle>();
+        foreach (var oneCandleInfo in responseResult)
+        {
+            var candleInfo = new List<float>();
+            foreach (var candleFields  in oneCandleInfo)
+            {
+                candleInfo.Add(candleFields);
+            }
+            candles.Add(new Candle(candleInfo[0], candleInfo[1], candleInfo[2], candleInfo[3], 
+                                                                        candleInfo[4], candleInfo[5]));
+        }
+        return candles;
+    }
     
     public static Ticker ConvertToTicker(this IEnumerable<float> responseResult)
     {
